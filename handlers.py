@@ -211,7 +211,7 @@ class MongoHandler:
         """
 
         if type(args).__name__ != 'dict':
-            out('{"ok" : 0, "errmsg" : "_find must be a GET request"}')
+            out('{"ok" : 0, "errmsg" : "_count must be a GET request"}')
             return
 
         conn = self._get_connection(name)
